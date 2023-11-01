@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -134,19 +135,22 @@ But the end can happen for anyone at any time, &amp; I can’t help but think of
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nN4-Hh-eVY">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lsj-EV-X94">
                                 <rect key="frame" x="0.0" y="128" width="399" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tpT-rH-HG6">
+                                        <rect key="frame" x="0.0" y="0.0" width="399" height="150"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="C0u-hQ-HNm"/>
+                                    <constraint firstAttribute="trailing" secondItem="tpT-rH-HG6" secondAttribute="trailing" id="B8t-Hl-bqJ"/>
+                                    <constraint firstAttribute="height" constant="150" id="Ep4-Cm-hlf"/>
+                                    <constraint firstItem="tpT-rH-HG6" firstAttribute="top" secondItem="Lsj-EV-X94" secondAttribute="top" id="HEb-4J-hQy"/>
+                                    <constraint firstAttribute="bottom" secondItem="tpT-rH-HG6" secondAttribute="bottom" id="ZEH-Ts-iUd"/>
+                                    <constraint firstItem="tpT-rH-HG6" firstAttribute="leading" secondItem="Lsj-EV-X94" secondAttribute="leading" id="cV3-1w-o4B"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="X34-gm-pP3">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                            </collectionView>
+                            </view>
                         </subviews>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuV-2o-BaS">
@@ -184,13 +188,14 @@ But the end can happen for anyone at any time, &amp; I can’t help but think of
                 <outlet property="btnLikedAndRetweet" destination="l7t-ZG-CCQ" id="uP0-EC-dF6"/>
                 <outlet property="btnRetweet" destination="T8n-yz-dFe" id="Cv1-o8-Jsu"/>
                 <outlet property="btnShare" destination="Ylj-VO-HE0" id="5iM-qR-OS2"/>
-                <outlet property="collectionMedia" destination="nN4-Hh-eVY" id="BfR-MS-n0P"/>
+                <outlet property="imgMedia" destination="tpT-rH-HG6" id="UJM-7T-iN4"/>
                 <outlet property="imgProfilePic" destination="rUD-Eh-mNH" id="UXD-bl-CwN"/>
                 <outlet property="lblTime" destination="lEn-PY-Mh5" id="p6v-9T-phf"/>
                 <outlet property="lblTweetText" destination="WBZ-Rz-7cB" id="lO7-Xu-w64"/>
                 <outlet property="lblUserId" destination="MYJ-WY-0JN" id="OOL-tF-Byo"/>
                 <outlet property="lblUserName" destination="muf-0r-7RP" id="oaU-tR-iKD"/>
                 <outlet property="viewBlueTick" destination="s1r-fB-APj" id="68F-Fv-dqL"/>
+                <outlet property="viewMedia" destination="Lsj-EV-X94" id="TgV-Wo-4Hf"/>
             </connections>
             <point key="canvasLocation" x="84.732824427480907" y="122.53521126760565"/>
         </tableViewCell>

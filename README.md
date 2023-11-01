@@ -24,7 +24,4 @@ I have used Refrence UI from https://www.figma.com/file/iMCavH2AWpth0f84oODt2j/T
 
 <div align="center">
     <img src="screenshots/1.png" width="150px"</img> 
-    <img src="screenshots/2.png" width="150px"</img> 
-    <img src="screenshots/3.png" width="150px"</img> 
-    <img src="screenshots/4.png" width="150px"</img> 
 </div>

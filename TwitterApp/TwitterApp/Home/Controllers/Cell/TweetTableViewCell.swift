@@ -54,7 +54,7 @@ class TweetTableViewCell: UITableViewCell {
         
         if viewModel.tweetData?.media != ""{
             viewMedia.isHidden = false
-            imgMedia.image = UIImage(named: viewModel.tweetData?.media ?? "")
+            imgMedia.image = UIImage(named:viewModel.tweetData?.media ?? "")
         }else{
             viewMedia.isHidden = true
         }

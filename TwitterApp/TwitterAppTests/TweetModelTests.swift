@@ -24,7 +24,7 @@ final class TweetModelTests: XCTestCase {
        //Act
        let rows = sut.numberOfRowsInSection(1)
         //Assert
-        XCTAssertGreaterThan(rows, 0)
+        XCTAssertGreaterThan(rows, 0,"Data not available")
     }
 
    

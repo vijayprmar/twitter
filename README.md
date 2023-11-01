@@ -17,10 +17,7 @@ Developement Summury :
 7. Done dlegate and data source methods of thable view and set data in tweet tableview cell
 8. Cretaed demo test case for available data is greted then 0 or no data
 
-
-Currently It supports English Language only
-
-I have used Refrence UI from https://www.figma.com/file/iMCavH2AWpth0f84oODt2j/Twitter-UI-Screens-(Community)?type=design&node-id=4-2990&mode=design&t=ZNd6cFcWYjZRLq5E-0
+Refrence UI from https://www.figma.com/file/iMCavH2AWpth0f84oODt2j/Twitter-UI-Screens-(Community)?type=design&node-id=4-2990&mode=design&t=ZNd6cFcWYjZRLq5E-0
 
 <div align="center">
     <img src="screenshots/1.png" width="150px"</img> 
